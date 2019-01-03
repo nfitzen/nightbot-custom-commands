@@ -1,0 +1,3 @@
+!commands add !partwr -a=!partwr2dontuse $(eval let choice=`$(1)`;choice=choice.toLowerCase();var srcvar;switch (choice) {case "ccs":srcvar="jqz05ek1 CCS";break;case "lwcl":srcvar="9qjdg6eq LWCL";break;case "mssl":srcvar="klr504w1 MSSL";break;case "bm":srcvar="jq672931 BM";break; default:srcvar="jqz05ek1 CCS";}srcvar;)
+
+!commands add !partwr2dontuse $(2) World Record: $(eval const choice="$(1)"; let top=$(urlfetch json https://www.speedrun.com/api/v1/leaderboards/m1mxxw46/category/7dgrjo7k?top=1&embed=players&var-kn04o9ol=$(1)).data;let time=new Date(null);time.setSeconds(top.runs[0].run.times.primary_t);time.toISOString().slice(11,19).match(/(?![0:]+).+/)+" by "+top.players.data[0].names.international;) (Use !partwr CCS, LWCL, MSSL, or BM for partial game WR)
