@@ -17,15 +17,12 @@ Here are the [Nightbot] commands:
 {% for attr in cmdfile %}
 {% if attr contains "cmd_name" %}
 ~~~
-!commands add {{ cmdfile.attr }} {{ commands[forloop.index0] }}
+!commands add {{ cmdfile.attr }} {{ commands[{{ forloop.index0 }} ] }}
 ~~~
 
 {% endif %}
 {% endfor %}
 {% endfor %}
 Just copy and paste these into chat and it'll add the command!
-
-Test{{ newline }}
-Test
 
 [nightbot]: //beta.nightbot.tv/
