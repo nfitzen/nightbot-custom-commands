@@ -1,7 +1,2 @@
 name: NateROCKS112
 markdown: kramdown
-defaults:
-    - scope:
-        path: "cmds"
-    values:
-        cmd: true
