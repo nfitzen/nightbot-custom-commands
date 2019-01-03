@@ -7,6 +7,7 @@ name: Nightbot Custom Commands
 So I made a few custom commands for [Nightbot].
 
 Here are the [Nightbot] commands:
+
 {% for cmdfile in site.static_files %}
     {% if cmdfile.path contains 'cmds' %}
 {{ cmdfile.basename }}:
