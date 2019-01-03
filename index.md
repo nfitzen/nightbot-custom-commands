@@ -12,7 +12,7 @@ Here are the [Nightbot] commands:
 {{ cmdfile.basename }}:
 
 ~~~
-{{ cmdfile.content }}
+{% include_relative cmdfile.path %}
 ~~~
 
     {% endif %}
