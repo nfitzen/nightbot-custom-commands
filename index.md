@@ -13,7 +13,7 @@ Here are the [Nightbot] commands:
 {{ cmdfile.basename }}:
 
 <code>
-{% include_relative {{ cmdfile.path }} %}
+{{% raw % }}{% include_relative {{ cmdfile.path }} %} {{% endraw %}}
 </code>
 
     {% endif %}
