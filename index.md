@@ -11,7 +11,7 @@ So I made a few custom commands for [Nightbot].
 Here are the [Nightbot] commands:
 
 {% for cmdfile in site.cmds %}
-{% assign commands = cmdfile.content | split: {{ newline }} %}
+{% assign commands = cmdfile.content | replace: {{ newline }}, " " | split: " " %}
 
 {% for cmd in commands %}
 {{ cmd }}
