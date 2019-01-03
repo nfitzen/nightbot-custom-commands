@@ -12,8 +12,6 @@ Here are the [Nightbot] commands:
 
 {% for cmdfile in site.cmds %}
 {% assign commands = cmdfile.content | split: {{ newline }} %}
-
-{{ commands }}
 {{ cmdfile.name }}:
 
 {% for attr in cmdfile %}
@@ -25,7 +23,9 @@ Here are the [Nightbot] commands:
 {% endif %}
 {% endfor %}
 {% endfor %}
-
 Just copy and paste these into chat and it'll add the command!
+
+Test{{ newline }}
+Test
 
 [nightbot]: //beta.nightbot.tv/
