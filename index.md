@@ -12,9 +12,9 @@ Here are the [Nightbot] commands:
     {% if cmdfile.path contains 'cmds' %}
 {{ cmdfile.basename }}:
 
-~~~
+<code>
 {% include_relative {{ cmdfile.path }} %}
-~~~
+</code>
 
     {% endif %}
 {% endfor %}
