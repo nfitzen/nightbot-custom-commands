@@ -1,0 +1,5 @@
+---
+name: All Unique Moons (AUM)
+cmd_name: !aumwr
+---
+AUM World record: $(eval let top=$(urlfetch json https://www.speedrun.com/api/v1/leaderboards/76r55vd8/category/wk6719ed?top=1&embed=players).data;let time=new Date(null);time.setSeconds(top.runs[0].run.times.primary_t);time.toISOString().slice(11,19).match(/(?![0:]+).+/)+" by "+top.players.data[0].names.international;)
