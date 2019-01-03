@@ -12,11 +12,12 @@ Here are the [Nightbot] commands:
 
 {% for cmdfile in site.cmds %}
 {% assign commands = cmdfile.content | split: {{ newline }} %}
+
+{{ commands }}
 {{ cmdfile.name }}:
 
 {% for attr in cmdfile %}
 {% if attr contains "cmd_name" %}
-{{ attr }}
 ~~~
 !commands add {{ cmdfile.attr }} {{ commands[forloop.index0] }}
 ~~~
