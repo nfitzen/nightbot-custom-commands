@@ -13,7 +13,7 @@ Here are the [Nightbot] commands:
 {% for cmdfile in site.cmds %}
 {% assign commands = cmdfile.content | split: {{ newline }} %}
 
-{% for cmd in commands}
+{% for cmd in commands %}
 {{ cmd }}
 
 {% endfor %}
