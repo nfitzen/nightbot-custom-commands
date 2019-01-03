@@ -16,7 +16,7 @@ Here are the [Nightbot] commands:
 
 {% for attr in cmdfile %}
 {% if attr contains "cmd_name" %}
-{% assign val = cmdfile[attr] %}
+{% assign val = cmdfile[{{ attr }}] %}
 
 <code>
 !commands add {{ val }} {{ commands[{{ forloop.index0 }}] }}
