@@ -22,6 +22,7 @@ Here are the [Nightbot] commands:
 
 {% endif %}
 {% endfor %}
+{% endfor %}
 
 Just copy and paste these into chat and it'll add the command!
 
