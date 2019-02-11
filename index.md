@@ -2,6 +2,10 @@
 layout: default
 title: Nightbot Custom Commands
 ---
+<script>
+let params = new URLSearchParams(window.location.search);
+if (params.get('legacy') != 'false') window.location = '/nightbot-custom-commands-legacy';
+</script>
 {% capture newline %}
 {% endcapture %}
 # Nightbot Custom Commands
