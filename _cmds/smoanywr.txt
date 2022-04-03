@@ -2,4 +2,4 @@
 name: Any%
 cmd_name: !wr
 ---
-Any% World record: $(eval let top=$(urlfetch json https://www.speedrun.com/api/v1/leaderboards/76r55vd8/category/w20w1lzd?var-68km3w4l=zqoyz021&top=1&embed=players).data;let time=new Date(null);time.setSeconds(top.runs[0].run.times.primary_t);time.toISOString().slice(11,19).match(/(?![0:]+).+/)+" by "+top.players.data[0].names.international;)
+SMO Any% WR: $(eval let top=$(urlfetch json https://www.speedrun.com/api/v1/leaderboards/76r55vd8/category/w20w1lzd?var-68km3w4l=zqoyz021&top=1&embed=players).data;let t=top.runs[0].run.times.primary_t;let h=t/3600 >= 1 ? String(Math.floor(t/3600)).padStart(2, '0')+":" : "";let m=String(Math.floor(t%3600/60)).padStart(2, '0');let s=String(t%3600%60).padStart(2, '0');h + m + ":" + s + " by " + top.players.data[0].names.international)
